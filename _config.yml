@@ -1,0 +1,20 @@
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Backdrop HIG Home
+tagline:          Human Interface Guide for backdrop cms
+url:              http(s)://backdrop-ops.github.io/backdrop-hig
+paginate:         1
+baseurl:          /backdrop-hig
+author:
+  name:           Goutam Dey
+  url:            https://twitter.com/dgoutam
+  email:          dgoutam@gmail.com
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/backdrop-ops/backdrop-hig
+highlighter: rouge

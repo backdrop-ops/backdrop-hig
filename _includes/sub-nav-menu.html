@@ -1,0 +1,47 @@
+{% capture html %}
+                        <ul>
+                            {% assign sorted_pages = site.pages | sort: 'id'   %}
+                                    
+                            {% for node in sorted_pages %}
+                               {% capture current %}{{ node.parent_id }}{% endcapture %}
+
+                                {% if node.id == include.parent %}
+                                    <li>
+                                        <a href="{{include.baseurl}}{{node.url}}">
+                                        &nbsp;<span class="title">{{ node.title }}</span>
+                                        </a>
+                                    </li>
+                                {% endif %}
+
+                               {% if node.parent_id == include.parent %}
+                                    {% if node.haschild %}
+                                        <li>
+                                            <a {% if node.url == page.url %}class="active"{% endif %} href="{{include.baseurl}}{{node.url}}">
+                                            {% if node.menu_title == 'Design Essentials' %}
+                                                <i class="fa fa-file-o"></i>
+                                            {% endif %}
+                                            {% if node.menu_title == 'UI/UX Patterns' %}
+                                                <i class="fa fa-list-alt"></i>
+                                            {% endif %}
+                                            {% if node.menu_title == 'Interface Elements' %}
+                                                <i class="fa fa-sliders"></i>
+                                            {% endif %}
+                                            
+                                            &nbsp;<span class="title">{{ node.menu_title }}</span>
+                                            </a>
+                                            {% include sub-nav-menu.html parent=node.id baseurl=include.baseurl %}
+                                        </li>
+                                     {% else %}
+                                        <li>
+                                            <a {% if node.url == page.url %}class="active"{% endif %} href="{{include.baseurl}}{{node.url}}"><span class="title">
+                                            {{node.title}}
+                                            </span>
+                                            </a>
+                                        </li>    
+                                     {% endif %}   
+                                    
+                                
+                                {% endif %}
+                            {% endfor %}      
+                        </ul>
+                    {% endcapture %}{{ html | strip_newlines | replace:'    ','' | replace:'    ','' | replace:'  ',' ' }}

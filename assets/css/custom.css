@@ -1,0 +1,110 @@
+/**
+ *
+ * Apply your custom CSS here
+ *
+*/
+
+body {
+    background-color: #fff;
+}
+.hero {
+    /*border: 1px dashed blue;*/
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero h1 {
+    font-size: 600%;
+    margin:50px;
+    
+}
+.hero p {
+
+    color: #797979;
+    font-size: 120%;
+    margin-bottom: 50px;
+}
+
+.box-container {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.box {
+    margin:10px;
+    height:180px;
+    color:#797979;
+    background-color: #f5f5f5;
+    border: 1px solid #e8e6e5;
+    padding-top:10%;
+}
+.box div {
+    margin-top:20px;
+    font-size:120%;
+}
+
+
+.user-info-navbar .user-info-menu > li > a {
+    border-bottom: 0;
+}
+.user-info-navbar .user-info-menu > li.logo > a {
+    padding: 22px;
+    margin: 0;
+    border-bottom: none;
+}
+a {
+}
+.bd-top-color-bar {
+    background-color: #27ACE2;
+    height: 5px;
+}
+.sidebar-menu {
+    background-color: #f5f5f5;
+    border-right: 1px solid #e8e6e5;
+}
+.sidebar-menu .main-menu {
+
+}
+.sidebar-menu .main-menu a {
+    border-bottom: 1px solid #e8e6e5;
+    color:#797979;
+}
+
+.sidebar-menu .main-menu a:hover {
+    color:#27ace2;
+}
+
+.sidebar-menu .main-menu li.active,
+.sidebar-menu .main-menu li.opened,
+.sidebar-menu .main-menu li.expanded > a {
+    color:#27ace2;
+}
+.sidebar-menu .logo-env {
+    padding:15px;
+    border-bottom: 1px solid #e8e6e5;
+}
+
+.page-container .sidebar-menu .sidebar-menu-inner .logo-env {
+    padding:15px;
+    height: 68px;
+}
+.sidebar-menu.collapsed .logo-env .logo-collapsed img {
+    margin-top: 5px;
+}
+nav.navbar {
+    border-bottom: 1px solid #e8e6e5;
+
+}
+.user-info-navbar { 
+    margin:-30px -30px 0;
+    height:68px;
+ }   
+
+
+/*
+
+.navbar {
+    background-color: #f8f8f8;
+    top:5px;
+    margin:0;
+}
+*/
