@@ -1,0 +1,145 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="backdrop - Human Interface Guide"/>
+    <meta name="author" content="http://goutamdey.com"/>
+    <title>backdrop - Human Interface Guide</title>
+
+    <link rel="stylesheet" href="/backdrop-hig/assets/css/bootstrap.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="/backdrop-hig/assets/css/hig-theme-core.css">
+    <link rel="stylesheet" href="/backdrop-hig/assets/css/custom.css">
+    <link rel="stylesheet" href="/backdrop-hig/assets/css/font-awesome.min.css">
+
+
+    <script src="/backdrop-hig/assets/js/jquery-1.11.1.min.js"></script>
+
+
+</head>
+<body class="page-body">
+    <div class="bd-top-color-bar navbar-fixed-top"></div>
+
+    <div class="page-container">
+                <div class="sidebar-menu toggle-others fixed">
+            <div class="sidebar-menu-inner">
+                <header class="logo-env">
+                    <div class="logo">
+                        <a href="/backdrop-hig/" class="logo-expanded"> <img
+                            src="/backdrop-hig/assets/images/logo.png" width="180" alt=""/> </a>
+                        <a href="/backdrop-hig" class="logo-collapsed"> <img
+                            src="/backdrop-hig/assets/images/backdrop-icon-logo.png" alt=""/> </a>
+                    </div>
+
+                    <div class="mobile-menu-toggle visible-xs">
+                        <a href="#" data-toggle="mobile-menu">
+                        <i class="fa fa-bars"></i> </a>
+                    </div>
+                </header>
+
+                <ul id="main-menu" class="main-menu">
+
+                    <li><a href="#"><i class="fa fa-sitemap"></i><span class="title">HIG Navigation</span></a>
+                        
+                        <ul> <li><a href="/backdrop-hig/essentials/"><i class="fa fa-file-o"></i>&nbsp;<span class="title">Design Essentials</span></a><ul> <li><a href="/backdrop-hig/essentials/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/essentials/conceptual-model/"><span class="title">Conceptual Model</span></a></li> </ul></li><li><a href="/backdrop-hig/interface-elements/"><i class="fa fa-sliders"></i>&nbsp;<span class="title">Interface Elements</span></a><ul> <li><a href="/backdrop-hig/interface-elements/">&nbsp;<span class="title">Overview</span></a></li> </ul></li> <li><a class="active" href="/backdrop-hig/ui-ux-patterns/"><i class="fa fa-list-alt"></i>&nbsp;<span class="title">UI/UX Patterns</span></a><ul> <li><a href="/backdrop-hig/ui-ux-patterns/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/">&nbsp;<span class="title">User Input</span></a><ul> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/">&nbsp;<span class="title">User Input</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/captcha/"><span class="title">Captcha</span></a></li> </ul></li></ul></li> </ul>
+
+
+                    </li>
+                </ul>
+            </div>
+        </div> 
+        
+        <div class="main-content">
+          			<nav class="navbar user-info-navbar" role="navigation">
+                <ul class="user-info-menu left-links list-inline list-unstyled">
+                    <li>
+                        <a href="#" data-toggle="sidebar"> <i class="fa-bars"></i></a>
+                    </li>
+                </ul>
+            </nav>
+      
+          <h1 id="ui-ux-patterns">UI /UX Patterns</h1>
+
+<blockquote>
+  <p>…a problem which occurs over and over again in our environment, and then de- scribes the core of the solution to that problem…</p>
+</blockquote>
+
+<p>We at backdrop try to document the <em>Interaction design patterns</em> which are a way to describe solutions to common usability or accessibility problems in a specific context and used in backdrop core. They document interaction models that make it easier for users to understand an interface and accomplish their tasks or goal.</p>
+
+<h1 id="elements-of-an-interaction-design-pattern">Elements of an interaction design pattern</h1>
+
+<p>We at backdrop organize the common elements to describe the UI/ UX patterns with the following elements:</p>
+
+<ul>
+  <li>
+    <p><strong>Pattern Name</strong> - Choosing a clear and descriptive name helps people find the pattern and encourages clear communication between team members during design discussions.</p>
+  </li>
+  <li>
+    <p><strong>Pattern Description</strong> -  Because short names like “one-window drilldown” are sometimes not sufficient to describe the pattern, a few additional lines of explanation (or a canonical screenshot) will help explain how the pattern works.</p>
+  </li>
+  <li>
+    <p><strong>Problem Statement</strong> -  Written in user-centered language, this communicates what the user wants to achieve or what the challenge is to the end-user.</p>
+  </li>
+  <li>
+    <p><strong>Use When</strong> -  “Context of use” is a critical component of the design pattern. This element helps people understand situations when the design pattern applies (and when it does not.)</p>
+  </li>
+  <li>
+    <p><strong>Solution</strong> -  The solution should explain “how” to solve the problem, and may include prescriptive checklists, screenshots, or even short videos demonstrating the pattern in action.</p>
+  </li>
+  <li>
+    <p><strong>Rationale</strong> -  Providing reasons “why” the pattern works will reinforce the solution, though time-pressed developers may prefer to ignore this explanation.</p>
+  </li>
+  <li>
+    <p><strong>Examples</strong> - Each example shows how the pattern has been successfully applied This is often accompanied by a screenshot and a short description.</p>
+  </li>
+</ul>
+
+<h1 id="categorization">Categorization</h1>
+
+<p>We at backdrop categorized the patterns used throughout the backdrop as follows:</p>
+
+<ul>
+  <li><strong>User Input</strong></li>
+  <li><strong>Playing with Data</strong></li>
+  <li><strong>Navigation</strong></li>
+  <li><strong>Miscellaneous</strong> </li>
+</ul>
+
+      
+   <!-- Main Footer -->
+            <br/>
+            <footer class="main-footer sticky footer-type-1">
+                <div class="footer-inner">
+                    <div class="row">
+
+                        <div class="col-md-6 footer-text">
+                            &copy; 2014
+                            <strong>backdrop-HIG</strong>
+                            theme by <a href="goutamdey.com" target="_blank">@dgoutam</a>
+                        </div>
+                        <div class="col-md-6 footer-text right-links">
+                            <strong>backdrop-cms.org</strong>
+                            <a href="backdrop-cms.org" target="_blank">backdrop-cms.org</a>
+                        </div>
+                     </div>
+                    <div class="go-up"><a href="index.html#" rel="go-top"> <i class="fa-angle-up"></i> </a></div>
+                </div>
+            </footer>
+        </div> <!-- end of Main Content -->
+
+
+    </div> <!-- End of page-container -->
+
+    <script src="/backdrop-hig/assets/js/bootstrap.min.js"></script>
+    <script src="/backdrop-hig/assets/js/TweenMax.min.js"></script>
+    <script src="/backdrop-hig/assets/js/resizeable.js"></script>
+    <script src="/backdrop-hig/assets/js/joinable.js"></script>
+    <script src="/backdrop-hig/assets/js/hig-api.js"></script>
+    <script src="/backdrop-hig/assets/js/hig-toggles.js"></script>
+    <script src="/backdrop-hig/assets/js/hig-custom.js"></script>
+</body>
+</html>
