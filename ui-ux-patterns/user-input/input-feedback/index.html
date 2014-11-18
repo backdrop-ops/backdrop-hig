@@ -45,7 +45,7 @@
 
                     <li><a href="#"><i class="fa fa-sitemap"></i><span class="title">HIG Navigation</span></a>
                         
-                        <ul> <li><a href="/backdrop-hig/essentials/"><i class="fa fa-file-o"></i>&nbsp;<span class="title">Design Essentials</span></a><ul> <li><a href="/backdrop-hig/essentials/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/essentials/conceptual-model/"><span class="title">Conceptual Model</span></a></li> </ul></li><li><a href="/backdrop-hig/interface-elements/"><i class="fa fa-sliders"></i>&nbsp;<span class="title">Interface Elements</span></a><ul> <li><a href="/backdrop-hig/interface-elements/">&nbsp;<span class="title">Overview</span></a></li> </ul></li> <li><a href="/backdrop-hig/ui-ux-patterns/"><i class="fa fa-list-alt"></i>&nbsp;<span class="title">UI/UX Patterns</span></a><ul> <li><a href="/backdrop-hig/ui-ux-patterns/">&nbsp;<span class="title">Overview</span></a></li> <li><a class="active" href="/backdrop-hig/ui-ux-patterns/user-input/">&nbsp;<span class="title">User Input</span></a><ul> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/captcha/"><span class="title">Captcha</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/input-prompt/"><span class="title">Input Prompt</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/input-feedback/"><span class="title">Input Feedback</span></a></li> </ul></li></ul></li> </ul>
+                        <ul> <li><a href="/backdrop-hig/essentials/"><i class="fa fa-file-o"></i>&nbsp;<span class="title">Design Essentials</span></a><ul> <li><a href="/backdrop-hig/essentials/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/essentials/conceptual-model/"><span class="title">Conceptual Model</span></a></li> </ul></li><li><a href="/backdrop-hig/interface-elements/"><i class="fa fa-sliders"></i>&nbsp;<span class="title">Interface Elements</span></a><ul> <li><a href="/backdrop-hig/interface-elements/">&nbsp;<span class="title">Overview</span></a></li> </ul></li> <li><a href="/backdrop-hig/ui-ux-patterns/"><i class="fa fa-list-alt"></i>&nbsp;<span class="title">UI/UX Patterns</span></a><ul> <li><a href="/backdrop-hig/ui-ux-patterns/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/">&nbsp;<span class="title">User Input</span></a><ul> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/captcha/"><span class="title">Captcha</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/input-prompt/"><span class="title">Input Prompt</span></a></li> <li><a class="active" href="/backdrop-hig/ui-ux-patterns/user-input/input-feedback/"><span class="title">Input Feedback</span></a></li> </ul></li></ul></li> </ul>
 
 
                     </li>
@@ -62,19 +62,28 @@
                 </ul>
             </nav>
       
-          <h1 id="user-input-overview">User Input Overview</h1>
-<p>All most all system expects users to provide inputs by entering data. But in the process user experiences various challenges.
-In this section of UI/UX patterns we enlist all the patterns used by backdrop for common challenges user might face.</p>
+          <h1 id="input-feedback">Input Feedback</h1>
 
-<h3 id="patterns-for-user-input">Patterns for User Input</h3>
-<p>List of patterns we suggests, practiced and recommends:</p>
+<h3 id="pattern-description">Pattern Description</h3>
+<p>When users submit content to your site via forms, errors in the data the user has provided is bound to happen from time to time. The goal of this pattern is to improve the user experience by minimizing input errors.</p>
 
-<ul>
-  <li>Captcha - TBD</li>
-  <li>Input Feedback</li>
-  <li>Input Prompt</li>
-  <li>TBD</li>
-</ul>
+<p>A paradigm suited for determining whether errors happened during form submission is whether the data validates. A common way to tell if data validates is to set up rules for each input field in the form that the entered data must pass to validate.</p>
+
+<h3 id="problem-statement">Problem Statement</h3>
+<p>When user enter data to the system and which is wrong and system needs to inform the user about it in a proper manner so that it helps user to understand the problem and also gets the clue how to correct the mistake.</p>
+
+<h3 id="use-when">Use When</h3>
+<p>System needs to validate or check the sanity of data as per the requirement of the system to function properly. Also needs to help user how to provide correct data as input.</p>
+
+<h3 id="solution">Solution</h3>
+<p>Indicate where user has faltered with a visible clue and a message stating what has entered wrong so that user can map. System also needs to provide appropriate message by which user can able to understand how to correct it or what is the correct way of providing input.</p>
+
+<h3 id="rationale">Rationale</h3>
+<p>System needs to take care of the users mistake which is very common. It is obvious to the user that system will help them to use it in a proper manner with guidance.</p>
+
+<h3 id="examples">Examples</h3>
+
+<p><img src="../images/input-feedback.png" alt="Input Prompt Pattern Example" /></p>
 
       
    <!-- Main Footer -->

@@ -45,7 +45,7 @@
 
                     <li><a href="#"><i class="fa fa-sitemap"></i><span class="title">HIG Navigation</span></a>
                         
-                        <ul> <li><a href="/backdrop-hig/essentials/"><i class="fa fa-file-o"></i>&nbsp;<span class="title">Design Essentials</span></a><ul> <li><a href="/backdrop-hig/essentials/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/essentials/conceptual-model/"><span class="title">Conceptual Model</span></a></li> </ul></li><li><a href="/backdrop-hig/interface-elements/"><i class="fa fa-sliders"></i>&nbsp;<span class="title">Interface Elements</span></a><ul> <li><a href="/backdrop-hig/interface-elements/">&nbsp;<span class="title">Overview</span></a></li> </ul></li> <li><a href="/backdrop-hig/ui-ux-patterns/"><i class="fa fa-list-alt"></i>&nbsp;<span class="title">UI/UX Patterns</span></a><ul> <li><a href="/backdrop-hig/ui-ux-patterns/">&nbsp;<span class="title">Overview</span></a></li> <li><a class="active" href="/backdrop-hig/ui-ux-patterns/user-input/">&nbsp;<span class="title">User Input</span></a><ul> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/captcha/"><span class="title">Captcha</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/input-prompt/"><span class="title">Input Prompt</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/input-feedback/"><span class="title">Input Feedback</span></a></li> </ul></li></ul></li> </ul>
+                        <ul> <li><a href="/backdrop-hig/essentials/"><i class="fa fa-file-o"></i>&nbsp;<span class="title">Design Essentials</span></a><ul> <li><a href="/backdrop-hig/essentials/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/essentials/conceptual-model/"><span class="title">Conceptual Model</span></a></li> </ul></li><li><a href="/backdrop-hig/interface-elements/"><i class="fa fa-sliders"></i>&nbsp;<span class="title">Interface Elements</span></a><ul> <li><a href="/backdrop-hig/interface-elements/">&nbsp;<span class="title">Overview</span></a></li> </ul></li> <li><a href="/backdrop-hig/ui-ux-patterns/"><i class="fa fa-list-alt"></i>&nbsp;<span class="title">UI/UX Patterns</span></a><ul> <li><a href="/backdrop-hig/ui-ux-patterns/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/">&nbsp;<span class="title">User Input</span></a><ul> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/captcha/"><span class="title">Captcha</span></a></li> <li><a class="active" href="/backdrop-hig/ui-ux-patterns/user-input/input-prompt/"><span class="title">Input Prompt</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/input-feedback/"><span class="title">Input Feedback</span></a></li> </ul></li></ul></li> </ul>
 
 
                     </li>
@@ -62,19 +62,32 @@
                 </ul>
             </nav>
       
-          <h1 id="user-input-overview">User Input Overview</h1>
-<p>All most all system expects users to provide inputs by entering data. But in the process user experiences various challenges.
-In this section of UI/UX patterns we enlist all the patterns used by backdrop for common challenges user might face.</p>
+          <h1 id="input-prompt">Input Prompt</h1>
 
-<h3 id="patterns-for-user-input">Patterns for User Input</h3>
-<p>List of patterns we suggests, practiced and recommends:</p>
+<h3 id="pattern-description">Pattern Description</h3>
+<p>The Input Prompt pattern is most successfully used with dropdown lists and text fields.
+As the dropdown list has a fixed set of choices the user can choose from, it is often words like Select or Choose the prompt text begins with.
+For text fields, the prompting string often begins with a call to action: Enter, Type, Search.
+End the string with the noun the input is describing, for instance Enter city or Enter an address.</p>
 
-<ul>
-  <li>Captcha - TBD</li>
-  <li>Input Feedback</li>
-  <li>Input Prompt</li>
-  <li>TBD</li>
-</ul>
+<p>For text fields, the Input Prompt pattern is often combined with scripting that removes the prompting text once the user’s focus is on that box. Once the user enters the input field to type in content, the prompting text is removed and replaced with nothing so that the input field is free for the user to fill out</p>
+
+<h3 id="problem-statement">Problem Statement</h3>
+
+<p>Backdrop system needs user correct inputs from user but needs to minimize the effort/time for user.</p>
+
+<h3 id="use-when">Use When</h3>
+<p>When system expect a input which is correct and wants to minimize the effort/time of providing input by proper and valid clue.</p>
+
+<h3 id="solution">Solution</h3>
+<p>Provide correct system default value/s with proper explanations in the form of message.</p>
+
+<h3 id="rationale">Rationale</h3>
+<p>User uses a system to mimimize overall effort and get the maximum value, so help user by providing proper defaults with message.</p>
+
+<h3 id="examples">Examples</h3>
+
+<p><img src="../images/input-prompt.png" alt="Input Prompt Pattern Example" /></p>
 
       
    <!-- Main Footer -->
