@@ -45,7 +45,7 @@
 
                     <li><a href="#"><i class="fa fa-sitemap"></i><span class="title">HIG Navigation</span></a>
                         
-                        <ul> <li><a href="/backdrop-hig/essentials/"><i class="fa fa-file-o"></i>&nbsp;<span class="title">Design Essentials</span></a><ul> <li><a href="/backdrop-hig/essentials/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/essentials/conceptual-model/"><span class="title">Conceptual Model</span></a></li></ul></li><li><a href="/backdrop-hig/interface-elements/"><i class="fa fa-sliders"></i>&nbsp;<span class="title">Interface Elements</span></a><ul> <li><a href="/backdrop-hig/interface-elements/">&nbsp;<span class="title">Overview</span></a></li> </ul></li> <li><a href="/backdrop-hig/ui-ux-patterns/"><i class="fa fa-list-alt"></i>&nbsp;<span class="title">UI/UX Patterns</span></a><ul> <li><a href="/backdrop-hig/ui-ux-patterns/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/">&nbsp;<span class="title">User Input</span></a><ul> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/captcha/"><span class="title">Captcha</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/input-prompt/"><span class="title">Input Prompt</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/input-feedback/"><span class="title">Input Feedback</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/constraint-input/"><span class="title">Constraint Input</span></a></li> </ul></li> </ul></li></ul>
+                        <ul> <li><a href="/backdrop-hig/essentials/"><i class="fa fa-file-o"></i>&nbsp;<span class="title">Design Essentials</span></a><ul> <li><a href="/backdrop-hig/essentials/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/essentials/conceptual-model/"><span class="title">Conceptual Model</span></a></li></ul></li><li><a href="/backdrop-hig/interface-elements/"><i class="fa fa-sliders"></i>&nbsp;<span class="title">Interface Elements</span></a><ul> <li><a href="/backdrop-hig/interface-elements/">&nbsp;<span class="title">Overview</span></a></li> </ul></li> <li><a href="/backdrop-hig/ui-ux-patterns/"><i class="fa fa-list-alt"></i>&nbsp;<span class="title">UI/UX Patterns</span></a><ul> <li><a href="/backdrop-hig/ui-ux-patterns/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/">&nbsp;<span class="title">User Input</span></a><ul> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/">&nbsp;<span class="title">Overview</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/captcha/"><span class="title">Captcha</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/input-prompt/"><span class="title">Input Prompt</span></a></li> <li><a href="/backdrop-hig/ui-ux-patterns/user-input/input-feedback/"><span class="title">Input Feedback</span></a></li> <li><a class="active" href="/backdrop-hig/ui-ux-patterns/user-input/constraint-input/"><span class="title">Constraint Input</span></a></li> </ul></li> </ul></li></ul>
 
 
                     </li>
@@ -62,48 +62,29 @@
                 </ul>
             </nav>
       
-            <div class="row">
-      <div class="col-xs-1 col-md-12  hero">
-        <!--<img class="img-responsive center-block" src="/backdrop-higassets/images/hero.png" alt="Backdrop HIG Home">-->
-        
-        <h1>backdrop - HIG</h1>
-        
-        <h3>Human Interface guidelines for backdrop designers, developers, power-users and end users</h3>
-          [/backdrop-hig]
-      </div>
-  </div>
+          <h1 id="constraint-input">Constraint Input</h1>
 
-  <div class="box-container">
-	  <div class="row">
-		  <div class="col-md-4 text-center">
-			<div class="box">
-				<i class="fa fa-file-o fa-5x"></i>
-				<div>
-					<a href="essentials/">Design Essentials</a>
-				</div>
-			</div>
-			
-		  </div>
+<h3 id="pattern-description">Pattern Description</h3>
+<p>When system expects input data from user in specific format, type or syntax but user have not much clear idea about it. Then it is suggested to use constraint input with pre-defined data.
+The goal of this pattern is to help user choose from the pre-defined options to provide inputs.</p>
 
-		  <div class="col-md-4 text-center">
-  			<div class="box">
-  				<i class="fa fa-sliders fa-5x"></i>
-  				<div>
-  					<a href="interface-elements/">Interface Elements</a>
-  				</div>
-  			</div>
-		  </div>
+<h3 id="problem-statement">Problem Statement</h3>
+<p>When user needs to enter data to the system but have no clear idea what to put and in what format and expected correct format.
+And system has assumptions of the correct form of data and without which unable to function in proper way.</p>
 
-      <div class="col-md-4 text-center">
-        <div class="box">
-          <i class="fa fa-list-alt fa-5x"></i>
-          <div>
-            <a href="ui-ux-patterns/">UI/UX Patterns</a>
-          </div>
-        </div>
-      </div>
-	  </div>
-  </div>
+<h3 id="use-when">Use When</h3>
+<p>System needs a sanitized and pre-defined form of data and  as per the requirement of the system to function properly. And user has not clear idea about  how to provide correct data as input.</p>
+
+<h3 id="solution">Solution</h3>
+<p>Provide options with system acceptable data to the user so that user could not able to enter beyond the pre-defined input data.</p>
+
+<h3 id="rationale">Rationale</h3>
+<p>Some time system needs can not able to function properly without the pre-determined data, which is very common. It is obvious to the user that system needs to provide these pre-determined data to the user to choose form, to help user easily understand the options.</p>
+
+<h3 id="examples">Examples</h3>
+
+<p><img src="../images/constraint-input.png" alt="Input Prompt Pattern Example" /></p>
+
       
    <!-- Main Footer -->
             <br/>
