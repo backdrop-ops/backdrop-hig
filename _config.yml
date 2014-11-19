@@ -7,8 +7,8 @@ title:            Backdrop HIG Home
 tagline:          Human Interface Guide for backdrop cms
 url:              http(s)://backdrop-ops.github.io/backdrop-hig
 paginate:         1
-#baseurl:          /backdrop-hig
-baseurl:          ""
+baseurl:          /backdrop-hig
+#baseurl:          ""
 
 
 author:
